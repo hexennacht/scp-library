@@ -19,8 +19,6 @@ class CategoryServiceImpl(CategoryService):
         self.db = db_engine
 
     async def get_categories(self, param: FilterParams) -> Tuple:
-        print(self.db is None)
-
         with self.db.connect() as connection:
             try:
                 count = int(f"{connection.execute(text("select count(id) from categories")).scalar()}")
@@ -61,7 +59,8 @@ class CategoryServiceImpl(CategoryService):
             trx = connection.begin()
             try:
                 trx.connection.execute(
-                        text(f"DELETE FROM categories WHERE id = {id}")
+                        text(f"DELETE FROM categories WHERE id = :id"),
+                        {"id": id}
                     )
                 trx.commit()
             except ProgrammingError as e:
