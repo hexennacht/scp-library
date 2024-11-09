@@ -17,3 +17,7 @@ class CategoryService(ABC):
     @abstractmethod
     async def delete(self, id: int) -> bool:
         pass
+
+    @abstractmethod
+    async def update(self, category: Category) -> Category:
+        pass

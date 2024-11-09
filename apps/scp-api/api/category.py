@@ -38,3 +38,10 @@ async def delete(id: Annotated[int, Path(title="The id of the category")], svc: 
     category = await svc.delete(id=id)
 
     return HttpResponse(data=category, code=200, message="SUCCESS")
+
+@routes.put("/{id}")
+async def update(id: Annotated[int, Path(title="The id of the category")], request: Category, svc: Annotated[CategoryService, Depends(autowired)]) -> HttpResponse:
+    request.id = id
+    category = await svc.update(category=request)
+
+    return HttpResponse(data=category, code=200, message="SUCCESS")
