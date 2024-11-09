@@ -3,9 +3,9 @@ from typing import Literal
 from datetime import datetime
 
 class BaseEntity(BaseModel):
-    id: int | None
-    created_at: datetime | str | None
-    updated_at: datetime | str | None
+    id: int | None = None
+    created_at: datetime | str | None = None
+    updated_at: datetime | str | None = None
 
     class Config:
         # This allows the BaseEntity fields to be inherited in child classes

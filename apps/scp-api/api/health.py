@@ -10,7 +10,7 @@ from psycopg2 import ProgrammingError
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-routes = APIRouter()
+routes = APIRouter(tags=["Health Check"])
 
 @routes.get("/_health")
 async def health(db: Annotated[Engine, Depends(engine)]) -> HttpResponse:
