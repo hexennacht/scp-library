@@ -1,0 +1,11 @@
+{
+  "name": "scp-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "scripts": {
+    "dev": "uv run main.py"
+  },
+  "author": "Taufik R. Firdaus <me.taufikrf@gmail.com>",
+  "license": "GPL-3.0"
+}

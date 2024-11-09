@@ -1,0 +1,184 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "adminerevo@latest": {
+      "last_modified": "2024-11-03T14:18:04Z",
+      "resolved": "github:NixOS/nixpkgs/4ae2e647537bcdbb82265469442713d066675275#adminerevo",
+      "source": "devbox-search",
+      "version": "4.8.4",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xzbnlcgm3dvhi606slcfp2kydrmpv94f-adminerevo-4.8.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xzbnlcgm3dvhi606slcfp2kydrmpv94f-adminerevo-4.8.4"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rb7xrmqg3jfmr29fgb4q43lf5zp6c8jn-adminerevo-4.8.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rb7xrmqg3jfmr29fgb4q43lf5zp6c8jn-adminerevo-4.8.4"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v6ibj3ihzhj6zkpgvyn7hspwmkwf27hw-adminerevo-4.8.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/v6ibj3ihzhj6zkpgvyn7hspwmkwf27hw-adminerevo-4.8.4"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5i78m0a12zr3bdxfjr7kdqrwdq60cba8-adminerevo-4.8.4",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5i78m0a12zr3bdxfjr7kdqrwdq60cba8-adminerevo-4.8.4"
+        }
+      }
+    },
+    "nodejs": {
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#nodejs",
+      "source": "nixpkg"
+    },
+    "postgresql": {
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#postgresql",
+      "source": "nixpkg"
+    },
+    "python@3.13": {
+      "last_modified": "2024-11-03T14:18:04Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/4ae2e647537bcdbb82265469442713d066675275#python313",
+      "source": "devbox-search",
+      "version": "3.13.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ynpbisv3jxwwr5v2dh1v9648vagf0vbi-python3-3.13.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ynpbisv3jxwwr5v2dh1v9648vagf0vbi-python3-3.13.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1izaqn5qsr8qwy9lxrbpvcfzps3krgzv-python3-3.13.0",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/r36jpffanzqrzp1bnag5lryh2mxpvwh6-python3-3.13.0-debug"
+            }
+          ],
+          "store_path": "/nix/store/1izaqn5qsr8qwy9lxrbpvcfzps3krgzv-python3-3.13.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sf14yykqd5cy1z31kqiyq8fwm17l5nwq-python3-3.13.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/sf14yykqd5cy1z31kqiyq8fwm17l5nwq-python3-3.13.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b5w6mr7v3mnl9s163yimdksddnwhvqyl-python3-3.13.0",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/9wq8a39b66ls2jvyyd7nsmmhdl8vj0sy-python3-3.13.0-debug"
+            }
+          ],
+          "store_path": "/nix/store/b5w6mr7v3mnl9s163yimdksddnwhvqyl-python3-3.13.0"
+        }
+      }
+    },
+    "uv@latest": {
+      "last_modified": "2024-11-03T14:18:04Z",
+      "resolved": "github:NixOS/nixpkgs/4ae2e647537bcdbb82265469442713d066675275#uv",
+      "source": "devbox-search",
+      "version": "0.4.29",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ynyin9d5lbzi5a47mc7r5hvlrg15020x-uv-0.4.29",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/5jj6zgd7s9l55zfsrjn267fm92zg2f4s-uv-0.4.29-dist"
+            }
+          ],
+          "store_path": "/nix/store/ynyin9d5lbzi5a47mc7r5hvlrg15020x-uv-0.4.29"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kw4y580xp6zdvlcc02jh65w6mmc74syb-uv-0.4.29",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/yvvdfw5f7v9zrsljmyf1myw0mv3df9lx-uv-0.4.29-dist"
+            }
+          ],
+          "store_path": "/nix/store/kw4y580xp6zdvlcc02jh65w6mmc74syb-uv-0.4.29"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/aypiziwfa4z7ds112lb5fxjxyrnrqsba-uv-0.4.29",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/lnz8la73nw8mq2lrkpqc8vfm387cak63-uv-0.4.29-dist"
+            }
+          ],
+          "store_path": "/nix/store/aypiziwfa4z7ds112lb5fxjxyrnrqsba-uv-0.4.29"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/sc9w72kdzshkdvvxaxnxj7r7rqcd1hiv-uv-0.4.29",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/ydkwy0nz3s2r0dg5xazwp829vjsm8r7f-uv-0.4.29-dist"
+            }
+          ],
+          "store_path": "/nix/store/sc9w72kdzshkdvvxaxnxj7r7rqcd1hiv-uv-0.4.29"
+        }
+      }
+    }
+  }
+}

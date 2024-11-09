@@ -1,0 +1,16 @@
+[project]
+name = "scp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.4",
+    "mypy>=1.13.0",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.9.2",
+    "pyyaml>=6.0.2",
+    "sqlalchemy>=2.0.36",
+    "types-psycopg2>=2.9.21.20241019",
+    "types-pyyaml>=6.0.12.20240917",
+]

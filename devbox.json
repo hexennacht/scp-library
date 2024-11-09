@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.6/.schema/devbox.schema.json",
+  "packages": [
+    "python@3.13",
+    "uv@latest",
+    "nodejs",
+    "postgresql",
+    "adminerevo@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "export VENV_DIR=$(PWD)/.venv",
+      "export UV_PYTHON=$(PWD)/.devbox/nix/profile/default/bin/python",
+      "uv venv",
+      "source $VENV_DIR/bin/activate",
+      "export PGDATA=/Users/taufikfirdaus/Workspace/Python/scp/.devbox/virtenv/postgresql/data",
+      "export PGHOST=/Users/taufikfirdaus/Workspace/Python/scp/.devbox/virtenv/postgresql",
+      "uv sync"
+    ],
+    "scripts": {
+      "install": [
+        "uv sync",
+        "npm install"
+      ]
+    }
+  }
+}
