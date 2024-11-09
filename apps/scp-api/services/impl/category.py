@@ -32,3 +32,33 @@ class CategoryServiceImpl(CategoryService):
         total_pages = (count + param.limit - 1) // param.limit
 
         return (data, count, total_pages)
+    
+    async def create(self, category: Category) -> Category:
+        with self.db.connect() as connection:
+            trx = connection.begin()
+            try:
+                id = trx.connection.execute(
+                        text(f"INSERT INTO categories (name, description) VALUES ('{category.name}', '{category.description}') RETURNING id")
+                    ).scalar()
+                category.id = int(f"{id}")
+                trx.commit()
+            except ProgrammingError as e:
+                trx.rollback()
+                trx.close()
+                raise HTTPException(status_code=500, detail=e.pgerror)
+        trx.close()
+        return category
+    
+    async def delete(self, id: int) -> bool:
+        with self.db.connect() as connection:
+            trx = connection.begin()
+            try:
+                trx.connection.execute(
+                        text(f"DELETE FROM categories WHERE id = {id}")
+                    )
+                trx.commit()
+            except ProgrammingError as e:
+                trx.rollback()
+                raise HTTPException(status_code=500, detail=e.pgerror)
+        trx.close()
+        return True
